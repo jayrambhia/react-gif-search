@@ -11,7 +11,6 @@ class SearchBar extends React.Component {
   }
 
   onTermChange(term) {
-    console.log("onTermChange: " + term);
     this.props.onTermChange(term);
   }
 
@@ -28,9 +27,7 @@ class SearchBar extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log("unmount");
     if (this.subject !== undefined) {
-      console.log("complete");
       this.subject.complete();
     }
   }

@@ -7,7 +7,6 @@ class GifItem extends React.Component {
   }
 
   favoriteGif() {
-    console.log(this.props.gif);
     this.setState({ favorite: true });
     this.props.onFavoriteSelect(this.props.gif);
   }

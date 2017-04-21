@@ -8,7 +8,7 @@ import { bindActionCreators } from 'redux';
 
 class Favorites extends React.Component {
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.actions.fetchFavoriteGifs();
   }
 

@@ -26,7 +26,6 @@ export function requestGifs(term = null) {
 }
 
 export function favoriteGif(selectedGif) {
-  console.log(selectedGif);
   const userUid = Firebase.auth().currentUser.uid;
   const gifId = selectedGif.id;
 
